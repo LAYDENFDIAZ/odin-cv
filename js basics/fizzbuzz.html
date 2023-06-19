@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //FIZZBUZZ
+
+      //Fizz buzz is a group word game for children to teach them about
+      // division. Players take turns to count incrementally,
+      // replacing any number divisible by three with the word "fizz",
+      // and any number divisible by five with the word "buzz",
+      // and any number divisible by both 3 and 5 with the word "fizzbuzz".
+
+      // create a function with one perameter userInputNumber
+      // loop from one to the number which the user gave
+      // if number at current index is divisable by three with no remainder
+      // (console.log("fizz"))
+      // and any number divisible by five with the word "buzz",
+      // and any number divisible by both 3 and 5 with the word "fizzbuzz".
+
+      function fizzbuzz(userInputNumber) {
+        for (i = 0; i < userInputNumber; i++) {
+          if (i % 3 === 0 && i % 5 === 0) {
+            console.log("fizzbuzz");
+          } else if (i % 3 === 0) {
+            console.log("fizz");
+          } else if (i % 5 === 0) {
+            console.log("buzz");
+          } else {
+            console.log(i);
+          }
+        }
+      }
+
+      let userinputCast = NaN;
+
+      while (isNaN(userinputCast)) {
+        userinputCast = Number(prompt("please enter a number"));
+      }
+
+      fizzbuzz(userinputCast);
+    </script>
+  </body>
+</html>

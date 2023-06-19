@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,   initial-scale=1.0" />
+
+    <title>js basic 3</title>
+  </head>
+  <body>
+    <script>
+      function add7(number) {
+        let sum = number + 7;
+        return sum;
+      }
+
+      function multiply(numberOne, number2) {
+        let product = numberOne * number2;
+        return product;
+      }
+
+      function capitalize(word) {
+        let capatalizedWord = word.charAt(0).toUpperCase() + word.slice(1);
+        return capatalizedWord;
+      }
+      function lastLetter(str) {
+        let strSliceLst = str.slice(-1);
+        return strSliceLst;
+      }
+      console.log(add7(10));
+
+      console.log(multiply(10, 7));
+
+      console.log(capitalize("hello"));
+
+      console.log(lastLetter("hellowrld."));
+    </script>
+  </body>
+</html>
